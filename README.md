@@ -12,7 +12,7 @@ How To Use
 
 Accepts an array of `useRef()` for elements.
 
-#### Step 1: Import necessary hooks and components
+### Step 1: Import necessary hooks and components
 
 In the beginning of your component:
 
@@ -21,7 +21,7 @@ import { useRef } from "react";
 import useFadeScroll from "@/components/hooks/useFadeScroll";
 ```
 
-#### Step 2: Initialize useRef and useFadeScroll in the component body
+### Step 2: Initialize useRef and useFadeScroll in the component body
 
 In your component's body:
 
@@ -30,7 +30,7 @@ const elementsRef = useRef([]);
 useFadeScroll(elementsRef.current);
 ```
 
-#### Step 3: Add required attributes to the elements
+### Step 3: Add required attributes to the elements
 
 For every element you want to use this on, you need to add the following attributes:
 
@@ -38,7 +38,7 @@ For every element you want to use this on, you need to add the following attribu
 - `ref={(el) => (elementsRef.current[0] = el)}` - Increment for every extra element.
 
 
-#### Example Use:
+### Example Use:
 
 ```javascript
 import { useRef } from "react";
